@@ -1,87 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <meata charset = "UTF-8" />
-        <link rel="stylesheet" href="index.css">
-        <title>멋쟁이사자처럼</title>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>자기소개 홈페이지</title>
     </head>
-    <body>
-        <a href="https://kmu-likelion13.site/">멋쟁이사자처럼 바로가기</a>
-        <br>
+    <body style="background-color:rgba(36, 8, 8, 0.95)">        
+        <div id="container">
+            <header id = "header"> 
+                <nav class ="menu">
+                    <ul>
+                        <li><a href = "index.html"><b>Home</b></a></li>
+                        <li><a href = "./templates/about.html"><b>About</b></a></li>
+                        <li><a href = "./templates/hobby.html"><b>Hobby</b></a></li>
+                        <li><a href = "./templates/guestbook.html"><b>Guestbook</b></a></li>
+                        <li><a href = "./templates/contact.html"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+            </header> 
+            <div class="list">
+                <div class="first">
+                    <span class="profile"><img src="./img/me.jpg" width="350px" alt="이미지 없음"></span>
+                    <h3 ><b>Kang Daeun</b></h3>
+                </div>
+            </div>
+        </div>
 
-        <img src="lion1.png" alt="이미지 없음">
         
-        <h1>LIKE LION UNIV.</h1>
-        <h3>회원가입</h3>
-
-        <form action="" method="">
-            <fieldset>
-                <legend>기본정보</legend>
-                <label for="userid">아이디 : 
-                    <input type="text" id="userid" placeholder="아이디는 8자 이상입니다.">
-                </label>
-                <br>
-
-                <label for="password">비밀번호 : 
-                    <input type="password" id="password" placeholder="비밀번호는 10자 이상입니다.">
-                </label>
-                <br>
-
-                성별 :
-                <label for="gender">남자
-                    <input type="radio" name="gender" valuie="남자">
-                </label>
-                <label for="gender">여자
-                    <input type="radio" name="gender" valuie="여자">
-                </label>
-                
-            </fieldset>
-
-            <fieldset>
-                <legend>
-                    부가정보
-                </legend>
-                
-                취미 :
-                <label for="hobby">코딩
-                    <input type="checkbox">
-                </label>
-                <label for="hobby">영화감상
-                    <input type="checkbox">
-                </label>
-                <label for="hobby">음악감상
-                    <input type="checkbox">
-                </label>
-                <label for="hobby">독서
-                    <input type="checkbox">
-                </label>
-                <label for="hobby">운동
-                        <input type="checkbox">
-                </label>
-                <br>
-
-                프로필 사진 : 
-                <input type="file">
-                <br>
-
-                사는 지역 : 
-                <select name="region">
-                    <option value="서울">서울</option>
-                    <option value="대구">대구</option>
-                    <option value="부산">부산</option>
-                </select>
-                <br>
-                
-                자기소개:
-                <textarea name="intro" row="5" cols="50">가벼운 자기소개를 입력해주세요.</textarea>
-                <br>
-                
-                <button class="button1">가입하기</button>
-                <button class="button2">다시작성</button>
-            </fieldset>
-        </form>
-
     </body>
-
-
 </html>

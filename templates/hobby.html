@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <title>자기소개 홈페이지</title>
+    </head>
+    <style>
+        img{
+            width: auto;
+            height: 300px;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 0 0 15px 15px;
+        }
+    </style>
+    <body style="background-color:rgba(34, 29, 44, 0.9);">        
+        <div id="container">
+            <header id = "header"> 
+                <nav class ="menu">
+                    <ul>
+                        <li><a href = "../index.html"><b>Home</b></a></li>
+                        <li><a href = "about.html"><b>About</b></a></li>
+                        <li><a href = "hobby.html"><b>Hobby</b></a></li>
+                        <li><a href = "guestbook.html"><b>Guestbook</b></a></li>
+                        <li><a href = "contact.html"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+            </header> 
+            <div class="list">
+                <div class="third">                        
+
+                    <div class="popup modal1">
+                        <a href="#none" class="close">X</a>
+                        <h4>
+                            <b>작년 여름에 촬영한 프로모션 때 찍은 사진이에요!<br>
+                            뱀파이어를 주제로 한 촬영이었습니다!</b>
+                        </h4>
+                    </div>
+                    <div class="popup modal2">
+                        <a href="#none" class="close">X</a>
+                        <h4>
+                            <b>2년전 정기공연 사진이에요!<br>
+                            저의 첫번째 팀장으로써의 정기공연이랍니다!</b>
+                        </h4>
+                    </div>
+                    <div class="popup modal3">
+                       <a href="#none" class="close">X</a>
+                        <h4>
+                            <b>찬조 공연을 준비하던 와중에 찍힌 사진이에요!<br>
+                            평소에 사진을 잘 찍지 않아서 얼마없는 다른 사람이 찍어준 사진입니다!</b>
+                        </h4>
+                    </div>
+                    <div class="popup modal4">
+                        <a href="#none" class="close">X</a>
+                        <h4>
+                            <b>처음으로 안무 짰던 공연사진이에요!<br>
+                            처음이라 기억에 많이 남습니다</b>
+                        </h4>
+                    </div>
+
+                    <h3>
+                        <br><br>
+                        <b>' Dance '</b><br><br>
+                        저는 20살부터 Busta라는 중앙 동아리에 속해있습니다<br>
+                        현재는 Busta에서 회장이라는 직책을 맡고 있어요 :)<br>
+                        아래 사진들은 제가 Busta에서 활동했을 때 사진입니다!<br>
+                        사진을 클릭하시면 사진에 대한 정보를 보실 수 있습니다!
+                    </h3>
+
+                    <a href="javascript:openModal('modal1');">
+                        <img src="../img/h1.jpg">
+                    </a>
+                    <a href="javascript:openModal('modal2');">
+                        <img src="../img/h2.jpg">
+                    </a>
+                    <a href="javascript:openModal('modal3');">
+                        <img src="../img/h3.jpg">
+                    </a>
+                    <a href="javascript:openModal('modal4');">
+                        <img src="../img/h4.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            function openModal(modalname) {
+                document.get
+                $(".popup-overlay").fadeIn(300);
+                $("." + modalname).fadeIn(300);
+            }
+    
+            // 팝업 닫기
+            $('.popup .close').click(function() {
+                $(".popup-overlay").fadeIn(300);
+                $(this).parent().fadeOut(300);
+            });
+            </script>
+    </body>
+</html>
